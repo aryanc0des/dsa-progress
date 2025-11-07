@@ -16,9 +16,10 @@ vector<vector<string>> group(vector<string> word){ //word is the input vector fo
     
     vector<vector<string>> result;
 
-    for (int i = 0; i < x.size(); i++)
+    for (auto &entry : x)
     {
-        
+        result.push_back(entry.second);
     }
     
+    return result;
 }
